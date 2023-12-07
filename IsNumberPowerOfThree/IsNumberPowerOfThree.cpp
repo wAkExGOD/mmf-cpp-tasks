@@ -2,20 +2,19 @@
 
 int main()
 {
-    double num;
-    std::cout << "Enter a number: ";
-    std::cin >> num;
+    int r = 1, i = 1, c;
 
-    while (num > 1) {
-        num /= 3;
+    std::cin >> c;
 
-        if (num == 1) {
-            std::cout << "Yes";
-            return 0;
-        }
+    while (i < 5) {
+
+        r = r + 3;
+
+        i = i + c;
+
     }
 
-    std::cout << "No";
+    std::cout << r;
 
     return 0;
 }
